@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon cv Simple</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Police Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 📍 OÙ METTRE TES INFOS PERSONNELLES -->
+    <div class="container">
+        <!-- EN-TÊTE -->
+        <header class="header">
+            <div class="profile">
+                <h1 class="name">imane sandaoui</h1>
+                <!-- 💼 REMPLACE AVEC TON POSTE -->
+                <h2 class="title">Étudiante en informatique appliquée</h2>
+                
+                <!-- 📍 REMPLACE AVEC TES COORDONNÉES -->
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +212 682-962006</p>
+                    <p><i class="fas fa-envelope"></i> jerefuses@email.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Maroc</p>
+                </div>
+                
+                <!-- BOUTONS INTERACTIFS -->
+                <div class="buttons">
+                    <button class="btn btn-primary" id="contactBtn">
+                        <i class="fas fa-envelope"></i> Me contacter
+                    </button>
+                    <button class="btn btn-secondary" id="themeBtn">
+                        <i class="fas fa-moon"></i> Mode sombre
+                    </button>
+                    <button class="btn btn-success" id="downloadBtn">
+                        <i class="fas fa-download"></i> Télécharger
+                    </button>
+                </div>
+            </div>
+            
+        
+            <div class="photo-section">
+        <p><img src="emma.jpeg" alt="mini imane"></p>
+                
+            
+                    
+                </div>
+            </div>
+        </header>
+
+
+        <main class="main-content">
+
+            <section class="section">
+                <h3><i class="fas fa-user"></i> À PROPOS DE MOI</h3>
+    
+                <p class="about-text">
+                    Étudiante passionnée par l'informatique et le développement web.
+                </p>
+            </section>
+
+            <!-- 📚 SECTION FORMATION -->
+            <section class="section">
+                <h3><i class="fas fa-graduation-cap"></i> FORMATION</h3>
+                <div class="timeline">
+                    <!-- 🏫 REMPLACE AVEC TES ÉTUDES -->
+                    <div class="timeline-item">
+                        <div class="year">2025 - Présent</div>
+                        <div class="content">
+                            <h4>Licence Informatique - 2ème année</h4>
+                            <p>la faculté des sciences semlalia de marrakech</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <h3><i class="fas fa-code"></i> COMPÉTENCES</h3>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <span>HTML/CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%"></div>
+                        </div>
+                        <button class="skill-btn" data-skill="HTML/CSS">+</button>
+                    </div>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                      <div class="skill-level" style="width: 70%"></div>
+                        </div>
+                        <button class="skill-btn" data-skill="JavaScript">+</button>
+                    </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git/GitHub</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 60%"></div>
+                        </div>
+                        <button class="skill-btn" data-skill="Git">+</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 🎯 SECTION PROJETS -->
+            <section class="section">
+                <h3><i class="fas fa-project-diagram"></i> MES PROJETS</h3>
+                <div class="projects">
+                    <!-- 💡 AJOUTE TES PROJETS -->
+                    <div class="project-card">
+                        <h4>CV Interactif</h4>
+                        <p>Ce site web que vous regardez !</p>
+                        <p class="tech">HTML, CSS, JavaScript</p>
+                        <button class="project-btn">Voir détails</button>
+                    </div>
+                    </div>
+                    <button id="addProjectBtn" class="add-btn">
+                        <i class="fas fa-plus"></i> 
+                    </button>
+                </div>
+            </section>
+            <section class="section contact-section">
+                <h3><i class="fas fa-address-book"></i> CONTACT</h3>
+                <div class="contact-form">
+                    <!-- 📧 FORMULAIRE SIMPLE -->
+                    <input type="text" id="visitorName" placeholder="Ton nom">
+                    <textarea id="visitorMessage" placeholder="Ton message..."></textarea>
+                    <button id="sendMsgBtn" class="btn-send">
+                        <i class="fas fa-paper-plane"></i> Envoyer un message
+                    </button>
+                </div>
+                <div class="social-links">
+                
+                    <a href="https://github.com/account" class="social-btn"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-btn"><i class="fas fa-globe"></i></a>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>© 2024 - Mon CV Simple | Dernière mise à jour : <span id="currentDate"></span></p>
+            <button id="printBtn" class="btn-small">
+                <i class="fas fa-print"></i> Imprimer
+            </button>
+        </footer>
+    </div>
+
+    <!-- MODAL SIMPLE -->
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modalTitle">Titre</h3>
+            <p id="modalText">Texte du modal</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
